@@ -4,8 +4,8 @@ window.validateEmail = function (email) {
 	}
 
 	const tokens = email.split('@');
-	if (tokens.length != 2) { //Verifica que el correo SÓLO tenga 2 partes, lo que está antes del arroba y después del arroba 
-		return false; //Si es distinto de 2, será false
+	if (tokens.length != 2) { //Verifica que el correo solo tenga 2 partes.
+		return false; //Si es distinto de 2, será falso
 	}
 
 	if (tokens[1].indexOf('.') < 0) {
