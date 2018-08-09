@@ -31,19 +31,15 @@ describe('Validar emails', () => { //Describe lo que habrá dentro de cada funci
 describe('Validar contraseña', () => { 
 	describe('Debería verificar si existe números', () => {
 		it('Debería la contraseña tener solo números', () => {
-			assert.equal(validatePassword("12345678"), true);
-			assert.equal(validatePassword("abcgjhbjjak"), false);
+	        assert.equal(validatePassword("abcgjhbjjak"), false);
 			assert.equal(validatePassword("ah2544gtab"), false);
 		});
-		it('Debería la contraseña tener solo 8 caracteres', () => {
-			assert.equal(validateEmail("12345678910"), false);
-			assert.equal(validateEmail("12345678"), true);
-		});
+		
 	}); (
 		describe('Debería verificar si tiene letras', () => {
 			it('Tiene numeros y solo caracteres 8', () => {
-				assert.equal(validateEmail('gagafaffssggs'), false);
-				assert.equal(validateEmail('aavvaHGTY'), false);
+				assert.equal(validatePassword('1324526778889'), false);
+				assert.equal(validatePassword('aavvaHGTY'), false);
 			});
 		}));
 	describe('Debería verificar que no tenga carácteres raros', () => {

@@ -25,8 +25,17 @@ window.validateEmail = function (email) {
 
 	return true;
 };
-/*const valPassword = function (password) {
-	if (typeof(valPassword) != "number" ) {
+
+
+window.validatePassword = function (password) {
+	if (password.length > 8) {
 		return false;
 	}
-}*/
+	
+		if (typeof(password) != "number") {
+			return false;
+		}
+	
+	return true;
+
+}
