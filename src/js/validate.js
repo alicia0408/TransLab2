@@ -4,8 +4,8 @@ window.validateEmail = function (email) {
 	}
 
 	const tokens = email.split('@');
-	if (tokens.length != 2) { //Verifica que el correo solo tenga 2 partes.
-		return false; //Si es distinto de 2, será falso
+	if (tokens.length != 2) { //Verifica que el correo solo tenga 2 partes
+		return false; //Si es distinto de 2, será false
 	}
 
 	if (tokens[1].indexOf('.') < 0) {
@@ -25,3 +25,8 @@ window.validateEmail = function (email) {
 
 	return true;
 };
+/*const valPassword = function (password) {
+	if (typeof(valPassword) != "number" ) {
+		return false;
+	}
+}*/

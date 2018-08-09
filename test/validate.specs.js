@@ -41,7 +41,7 @@ describe('Validar contraseña', () => {
 		});
 	}); (
 		describe('Debería verificar si tiene letras', () => {
-			it('Tiene numeros y solo caracteres 8 caracteres', () => {
+			it('Tiene numeros y solo caracteres 8', () => {
 				assert.equal(validateEmail('gagafaffssggs'), false);
 				assert.equal(validateEmail('aavvaHGTY'), false);
 			});
