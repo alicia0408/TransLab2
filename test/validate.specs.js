@@ -48,7 +48,20 @@ describe('Validar contraseña', () => {
 });
 
 
-
+describe('Validar tarjeta', () => {
+	describe('verificar que contenga máximo 10 carácteres numéricos y no contenga espacios', () => {
+		it('Debería tener máximo 10 carácteres', () => {
+			assert.equal(validateCard('01234567891234'), false);
+		});
+		it('Debería tener sólo números', () => {
+	      assert.equal(validateCard('12a4g609jk'), false);
+		});
+		it('Debería no tener espacios', () => {
+			assert.equal(validateCard('12 347'), false);
+			
+		});
+	});
+});
 
 
 
